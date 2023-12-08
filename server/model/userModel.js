@@ -45,6 +45,11 @@ const userSchema = new Schema({
       }
     },
   },
+  role:{
+    type: Boolean,
+    default: false
+
+  },
   resetPasswordToken:String,
   resetPasswordExpire:Date,
 },{timestamps:true});

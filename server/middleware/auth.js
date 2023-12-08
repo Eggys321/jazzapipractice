@@ -20,4 +20,13 @@ const auth = async(req,res,next) =>{
 
   
 }
+
+exports.isAdmin=(req,res,next)=>{
+  if(req.user.role === false){
+    res.status(403).json({status:false,message:"you do not have access to view this route"})
+
+  }
+  next()
+
+}
 module.exports = auth

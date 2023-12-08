@@ -185,6 +185,8 @@ const isLoggedIn = (req, res) => {
 
   }
 
+  
+
 module.exports = {
   registration,
   login,
