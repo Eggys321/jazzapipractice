@@ -22,7 +22,7 @@ router.delete('/products/:productId',deleteProduct);
 router.patch('/products/:productId',updateProduct);
 
 // single product
-router.get('/products/product',singleProduct);
+router.get('/products/:productId',singleProduct);
 
 // all products
 router.get('/products/products',allProducts);
